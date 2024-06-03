@@ -3,9 +3,9 @@ body {
 }
 
 header {
-  height: 100vh;
+  min-height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
-    url(header-img.jpeg) no-repeat center center / cover;
+    url(../images/header-img.jpeg) no-repeat center center / cover;
 }
 
 .nav-menu {
@@ -76,17 +76,19 @@ header {
   border: 3px solid #888;
   margin: auto;
 }
-
 .gallery-list-item {
   color: #777;
   cursor: pointer;
   user-select: none;
 }
-
 .active-item {
   color: #70ea70;
 }
-
 .customers {
   background: #11191a;
+}
+@media screen and (max-width:768px) {
+  .mission {
+padding: 0 !important;
+}
 }
